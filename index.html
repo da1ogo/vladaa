@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>ДЛЯ НЕФОРОВ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+			background-color: pink;
+		}
+        
+		h1 {
+            color: #ff0080;
+        }
+
+		#button {
+		background-color: #ff0080; /* Цвет кнопки */
+		color: pink; /* Цвет текста в кнопке */
+		font-size: 24px; /* Размер текста в кнопке */
+		padding: 10px 20px; /* Внутренние отступы кнопки */
+		border: none; /* Убираем границу кнопки */
+		border-radius: 5px; /* Закругляем углы кнопки */
+		font-weight: bold;
+	}
+	
+		#1 {
+			width: 10px;
+			height: 10px;
+			position: absolute;
+			top: 20px; /* Измените значение, чтобы перемещать вверх-вниз */
+			left: 20px; /* Измените значение, чтобы перемещать влево-вправо */
+		}
+    </style>
+</head>
+<body>
+    <h1>НЕФОРЫ И ГУЛИ - ЭТО ДЛЯ ВАС. ПОЧЕМУ ЖЕ ВАМ СТОИТ ОБРАТИТЬ ВНИМАНИЕ НА ВЛАДУ</h1>
+	<audio autoplay>
+  <source src="song.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+		<div class='photo'>
+			<div class='photo-item'>
+			<img src="1.png" width="200" height="150" alt="" id='1'>
+			</div>
+		</div>
+	<button id="button" onclick="changeText()">НАЧАТЬ</button>
+    <div id="message"></div>
+	<script>
+        let clickCount = 0;
+        function changeText() {
+            clickCount++;
+            if (clickCount === 1) {
+                document.getElementById("button").innerHTML = "ПОЧЕМУ?";
+				document.querySelector("audio").src = "song.mp3";
+                document.querySelector("audio").play();
+			} else if (clickCount === 2) {
+                document.getElementById("button").innerHTML = "ДАЛЬШЕ";
+				document.getElementById("message").innerHTML = "<br>1: У НЕЕ КРАСИВОЕ ИМЯ";
+			} else if (clickCount === 3) {
+                document.getElementById("button").innerHTML = "ДАЛЬШЕ";
+				document.getElementById("message").innerHTML = "<br>2: ОНА АЛЬТУШКА + НЯШКА = ИМБА";
+			} else if (clickCount === 4) {
+				document.getElementById("button").innerHTML = "ДАЛЬШЕ";
+				document.getElementById("message").innerHTML = "<br>3: У НЕЕ КРАСИВЫЕ ГЛАЗА ";
+               
+            } else if (clickCount === 5) {
+                document.getElementById("message").innerHTML = "<br>4: КРУТОЙ МУЗЫКАЛЬНЫЙ ВКУС";
+                document.getElementById("button").style.display = "ДАЛЬШЕ";
+         }else if (clickCount === 6)  {
+                document.getElementById("message").innerHTML = "<br>5: КРУТЫЕ ТИК ТОКИ";
+                document.getElementById("button").style.display = "ДАЛЬШЕ";
+            }else if (clickCount === 7)  {
+                document.getElementById("message").innerHTML = "<br>6: ОНА ГРИН ФЛАГ, NOT RED FLAG";
+                document.getElementById("button").style.display = "ДАЛЬШЕ";
+            }else if (clickCount === 8)  {
+                document.getElementById("message").innerHTML = "<br>7: НОЖКИ РАЗЬЕБ, ЧУВАКИ НЕФОРЫ, ЭТО ЖЕ ПОЧТИ САМОЕ ГЛАВНОЕ";
+                document.getElementById("button").style.display = "ДАЛЬШЕ";
+            }else if (clickCount === 9)  {
+                document.getElementById("message").innerHTML = "<br>8: ПОДПИСЫВАЙТЕСЬ НА ЕЕ ТИКТОК";
+                document.getElementById("button").style.display = "ДАЛЬШЕ";
+            }else if (clickCount === 10)  {
+                document.getElementById("message").innerHTML = "<br>9: УМЕЕТ ПОДДЕРЖАТЬ ДИАЛОГ";
+                document.getElementById("button").style.display = "ДАЛЬШЕ";
+            }else if (clickCount === 11)  {
+                document.getElementById("message").innerHTML = "<br>10: ЛЮБИТ НЕФОРОВ";
+                document.getElementById("button").style.display = "ДАЛЬШЕ";
+            }else if (clickCount === 12)  {
+                document.getElementById("message").innerHTML = "<br>11: ИГРАЕТ В БРАВЛСТАРС";
+                document.getElementById("button").style.display = "ДАЛЬШЕ";
+			}else if (clickCount === 13)  {
+                document.getElementById("message").innerHTML = "<br>12: КРУТАЯ ТЯНКА";
+                document.getElementById("button").style.display = "ДАЛЬШЕ";
+			}else if (clickCount === 14)  {
+                document.getElementById("message").innerHTML = "<br>13: ОЧЕНЬ КРУТАЯ ТЯНКА";
+                document.getElementById("button").style.display = "ДАЛЬШЕ";
+			}else if (clickCount === 15)  {
+                document.getElementById("message").innerHTML = "<br>14: БУДЕТ МУРЧАТЬ В ДИСКОРДЕ";
+                document.getElementById("button").style.display = "ДАЛЬШЕ";
+			}else if (clickCount === 16)  {
+                document.getElementById("message").innerHTML = "<br>15: АЛЕ ЕСЛИ ТЫ НЕФОР ВЫ УЖЕ ИДАЛЬНО ПОДХОДИТЕ ДРУГ ДРУГУ";
+                document.getElementById("button").style.display = "ДАЛЬШЕ";
+			}else if (clickCount === 17)  {
+                document.getElementById("message").innerHTML = "<br>КОРОЧЕ ВСЕ, ДАЛЬШЕ НЕТ СМЫСЛА ГОВОРИТЬ, КТО НЕ ТУПОЙ УЖЕ ПОНЯЛ, ЧТО ЭТО ЕГО СУДЬБА ВСЕЙ ЖИЗНИ";
+                document.getElementById("button").style.display = "ДАЛЬШЕ";
+            }
+		}
+			document.getElementById("message").style.fontSize = "30px"; // Изменить размер шрифта на 20 пикселей
+			document.getElementById("message").style.textAlign = "center"; // Выравнивание текста по центру
+			document.getElementById("message").style.fontFamily = "'Roboto', sans-serif;"; // Задать шрифт тексту
+			document.getElementById("message").style.fontWeight = 'bold';
+			document.getElementById("message").style.color = "#ff0080";
+		</script>
+		<script>
+  var audio = document.getElementById("myAudio");
+  audio.play();
+	</script>
+</body>
+</html>
